@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net10.0</TargetFrameworks>
+    <Product>Enbrea.Cron</Product>
+    <Description>Unit tests for Enbrea.Cron</Description>
+    <Authors>STÜBER SYSTEMS GmbH</Authors>
+    <Company>STÜBER SYSTEMS GmbH</Company>
+    <Copyright>© 2026 STÜBER SYSTEMS GmbH</Copyright>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <OutputType>Exe</OutputType>
+    <IsTestProject>true</IsTestProject>
+    <IsPackable>false</IsPackable>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Testing.Extensions.TrxReport" Version="2.5.1" />
+    <PackageReference Include="xunit.v3" Version="4.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Enbrea.Cron.csproj" />
+  </ItemGroup>
+</Project>
