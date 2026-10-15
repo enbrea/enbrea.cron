@@ -22,7 +22,7 @@ dotnet add package Enbrea.Cron
 
 ## Getting started
 
-See [GitHub wiki](https://github.com/enbrea/enbrea.cron/wiki).
+Documentation is available in the [GitHub wiki](https://github.com/enbrea/enbrea.cron/wiki).
 
 ## Can I help?
 
