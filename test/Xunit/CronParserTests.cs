@@ -360,6 +360,9 @@ public sealed class CronParserTests
     [InlineData("@daily", "0 0 * * *")]
     [InlineData("@midnight", "0 0 * * *")]
     [InlineData("@hourly", "0 * * * *")]
+    [InlineData("@minutely", "* * * * *")]
+    [InlineData("@weekdays", "0 0 * * 1-5")]
+    [InlineData("@weekends", "0 0 * * 6,7")]
     public void Parse_WhenSupportedMacroProvided_ReturnsCanonicalExpression(string macro, string expected)
     {
         var expression = CronExpression.Parse(macro);
@@ -414,6 +417,9 @@ public sealed class CronParserTests
     [InlineData("0 0 1 * ?", true)]
     [InlineData("0 0 0 1 1 ? 2026", true)]
     [InlineData("@daily", true)]
+    [InlineData("@minutely", true)]
+    [InlineData("@weekdays", true)]
+    [InlineData("@weekends", true)]
     [InlineData(null, false)]
     [InlineData("", false)]
     [InlineData("   ", false)]

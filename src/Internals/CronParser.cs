@@ -145,6 +145,9 @@ internal static class CronParser
             "@daily" => "0 0 * * *",
             "@midnight" => "0 0 * * *",
             "@hourly" => "0 * * * *",
+            "@minutely" => "* * * * *",
+            "@weekdays" => "0 0 * * 1-5",
+            "@weekends" => "0 0 * * 6,7",
             _ => throw new FormatException($"Unsupported cron macro '{expression}'.")
         };
     }
