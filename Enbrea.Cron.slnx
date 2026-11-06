@@ -2,6 +2,7 @@
   <Folder Name="/Solution Items/">
     <File Path=".editorconfig" />
   </Folder>
-  <Project Path="src/Enbrea.Cron.csproj" />
+  <Project Path="src/Enbrea.Cron/Enbrea.Cron.csproj" />
+  <Project Path="src/Enbrea.Cron.Descriptor/Enbrea.Cron.Descriptor.csproj" />
   <Project Path="test/Xunit/Enbrea.Cron.XUnit.csproj" />
 </Solution>

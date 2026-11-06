@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Enbrea.Cron.csproj" />
+    <ProjectReference Include="..\..\src\Enbrea.Cron\Enbrea.Cron.csproj" />
+    <ProjectReference Include="..\..\src\Enbrea.Cron.Descriptor\Enbrea.Cron.Descriptor.csproj" />
   </ItemGroup>
 </Project>
